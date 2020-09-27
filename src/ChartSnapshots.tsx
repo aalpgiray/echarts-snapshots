@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Button } from "antd";
-import { IChartSnapshot } from "./App";
+import { IChartSnapshot } from "./IChartSnapshot";
 
 export const ChartSnapshots: FC<
   {

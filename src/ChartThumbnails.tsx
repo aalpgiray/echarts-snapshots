@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { ChartTubnail } from "./ChartTubnail";
-import { IBasicChartMeta } from "./App";
+import { IBasicChartMeta } from "./IBasicChartMeta";
 
 export const ChartThumbnails: FC<
   {

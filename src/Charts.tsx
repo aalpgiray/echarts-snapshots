@@ -2,7 +2,9 @@ import React, { FC, useCallback, useMemo, useState, useRef } from "react";
 import ReactEcharts from "echarts-for-react";
 import ChartThumbnails from "./ChartThumbnails";
 import ChartSnapshots from "./ChartSnapshots";
-import { useSnapshots, charts, option } from "./App";
+import { charts } from "./charts";
+import { option } from "./option";
+import { IChartSnapshot } from "./IChartSnapshot";
 
 export const Charts: FC = () => {
   const [selectedChartId, setSelectedChartId] = useState<string>("1");
@@ -60,6 +62,16 @@ export const Charts: FC = () => {
       </div>
     </div>
   );
+};
+
+export const useSnapshots = () => {
+  const [snapshots, setSnapshots] = useState<IChartSnapshot[]>([]);
+
+  const addSnapshot = useCallback((snapshot: IChartSnapshot) => {
+    setSnapshots((_snaps) => [..._snaps, snapshot]);
+  }, []);
+
+  return { snapshots, addSnapshot };
 };
 
 export default Charts;
