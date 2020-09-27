@@ -1,7 +1,7 @@
 import React, { FC, useCallback } from "react";
 import { Tooltip } from "antd";
 import { AttachmentCard } from "./AttachmentCard";
-import { IBasicChartMeta } from "./App";
+import { IBasicChartMeta } from "./IBasicChartMeta";
 
 export const ChartTubnail: FC<{
   chartMeta: IBasicChartMeta;
