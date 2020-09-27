@@ -2,7 +2,7 @@ import React, { FC, useCallback, useMemo, useState, useRef } from "react";
 import ReactEcharts from "echarts-for-react";
 import ChartThumbnails from "./ChartThumbnails";
 import ChartSnapshots from "./ChartSnapshots";
-import { charts } from "./charts";
+import { charts } from "./chartsData";
 import { option } from "./option";
 import { IChartSnapshot } from "./IChartSnapshot";
 
